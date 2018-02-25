@@ -90,7 +90,7 @@ let replace = (_el, _name) => {
 	let courses = document.getElementById('courses')
 	if(current.courses.length > 0){
 		courses.style.visibility = 'visible'
-		courses.innerText = "Courses: " + current.courses.join(', ')
+		courses.innerHTML = "<b>Courses: </b>" + current.courses.join(', ')
 	}else{
 		courses.style.visibility = 'hidden'
 		courses.innerText = ''
